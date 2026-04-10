@@ -1272,7 +1272,7 @@ button,
 @media (max-width: 900px) {
   :root {
     --header-h: 80px;
-    --page-gutter: clamp(0.8rem, 4.2vw, 1.1rem);
+    --page-gutter: clamp(1rem, 5vw, 1.35rem);
   }
 
   .hero {
@@ -1299,6 +1299,12 @@ button,
   .btn {
     padding: 0.78rem 1.1rem;
     font-size: 0.92rem;
+  }
+   .page-hero.wrap,
+  .section .wrap,
+  .site-footer .wrap {
+    padding-inline-start: max(calc(var(--page-gutter) + 0.2rem), env(safe-area-inset-left, 0px));
+    padding-inline-end: max(calc(var(--page-gutter) + 0.2rem), env(safe-area-inset-right, 0px));
   }
 }
 

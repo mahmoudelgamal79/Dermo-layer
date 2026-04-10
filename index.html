@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Therapeutic moisturizers developed by pharmacy students at Wadi El Nile University."
+    />
+    <title>Wadi El Nile Derma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Dermo Layer</span>
+            <span class="brand-sub" data-i18n="meta.brandSub">Faculty of Pharmacy — Wadi El Nile University</span>
+          </span>
+        </a>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#overview" data-i18n="nav.overview">Overview</a></li>
+            <li><a href="index.html#products" data-i18n="nav.products">Products</a></li>
+            <li><a href="oily.html" data-i18n="nav.oily">Oily skin</a></li>
+            <li><a href="dry.html" data-i18n="nav.dry">Dry skin</a></li>
+            <li><a href="combination.html" data-i18n="nav.combination">Combination skin</a></li>
+          </ul>
+        </nav>
+
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-set-lang="ar" aria-pressed="false">عربي</button>
+        </div>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-i18n-aria-label="nav.menuOpen"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy reveal">
+            <p class="hero-badge" data-i18n="home.heroBadge">Faculty of Pharmacy · Wadi El Nile University</p>
+            <h1 data-i18n="home.heroTitle">Science-led hydration for every skin type</h1>
+            <p class="hero-lead" data-i18n="home.heroSubtitle">
+              A line of therapeutic moisturizers formulated by pharmacy students.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#products" data-i18n="home.heroCta">Explore the range</a>
+              <a class="btn btn-ghost" href="#overview" data-i18n="home.heroCtaSecondary">Our story</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal reveal-delay-1">
+            <img src="images\hero.jpeg" alt="" data-i18n-alt="meta.siteDescription" width="800" height="600" />
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="wrap split-panel">
+          <div class="section-head reveal">
+            <p class="section-kicker">Wadi El Nile</p>
+            <h2 data-i18n="home.overviewTitle">Why this project matters</h2>
+            <p class="section-lead" data-i18n="home.overviewLead"></p>
+          </div>
+          <div class="prose surface-card reveal reveal-delay-1">
+            <p data-i18n="home.overviewP1"></p>
+            <p data-i18n="home.overviewP2"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <p class="section-kicker" data-i18n="nav.products">Products</p>
+            <h2 data-i18n="home.productsSectionTitle">The three moisturizers</h2>
+            <p class="section-lead" data-i18n="home.productsSectionLead"></p>
+          </div>
+
+          <div class="product-grid">
+            <a class="product-card reveal" href="oily.html">
+              <div class="product-card-media">
+                <img src="images\oily1.jpeg" alt="" width="640" height="480" data-i18n-alt="nav.oily" />
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-tag" data-i18n="home.cardOilyTag"></span>
+                <h3 data-i18n="home.cardOilyTitle">Oily skin</h3>
+                <p data-i18n="home.cardOilyDesc"></p>
+                <span class="product-card-cta" data-i18n="home.cardCta"
+                  >View formulation <span aria-hidden="true">→</span></span
+                >
+              </div>
+            </a>
+
+            <a class="product-card reveal reveal-delay-1" href="dry.html">
+              <div class="product-card-media">
+                <img src="images\dry1.jpeg" alt="" width="640" height="480" data-i18n-alt="nav.dry" />
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-tag" data-i18n="home.cardDryTag"></span>
+                <h3 data-i18n="home.cardDryTitle">Dry skin</h3>
+                <p data-i18n="home.cardDryDesc"></p>
+                <span class="product-card-cta" data-i18n="home.cardCta"
+                  >View formulation <span aria-hidden="true">→</span></span
+                >
+              </div>
+            </a>
+
+            <a class="product-card reveal reveal-delay-2" href="combination.html">
+              <div class="product-card-media">
+                <img
+                  src="images\combination1.jpeg"
+                  alt=""
+                  width="640"
+                  height="480"
+                  data-i18n-alt="nav.combination"
+                />
+              </div>
+              <div class="product-card-body">
+                <span class="product-card-tag" data-i18n="home.cardComboTag"></span>
+                <h3 data-i18n="home.cardComboTitle">Combination skin</h3>
+                <p data-i18n="home.cardComboDesc"></p>
+                <span class="product-card-cta" data-i18n="home.cardCta"
+                  >View formulation <span aria-hidden="true">→</span></span
+                >
+              </div>
+            </a>
+          </div>
+
+          <div class="trust-grid section" style="padding-bottom: 0">
+            <div class="trust-item reveal">
+              <div class="trust-icon" aria-hidden="true">◆</div>
+              <h3 data-i18n="home.trust1Title"></h3>
+              <p data-i18n="home.trust1Text"></p>
+            </div>
+            <div class="trust-item reveal reveal-delay-1">
+              <div class="trust-icon" aria-hidden="true">◇</div>
+              <h3 data-i18n="home.trust2Title"></h3>
+              <p data-i18n="home.trust2Text"></p>
+            </div>
+            <div class="trust-item reveal reveal-delay-2">
+              <div class="trust-icon" aria-hidden="true">○</div>
+              <h3 data-i18n="home.trust3Title"></h3>
+              <p data-i18n="home.trust3Text"></p>
+            </div>
+          </div>
+
+          <div class="cta-band reveal">
+            <div>
+              <h2 data-i18n="home.ctaBandTitle"></h2>
+              <p data-i18n="home.ctaBandText"></p>
+            </div>
+            <a class="btn btn-primary" href="oily.html" data-i18n="home.ctaBandBtn"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p><strong data-i18n="footer.tagline"></strong> — <span data-i18n="footer.note"></span></p>
+        <p data-i18n="footer.rights"></p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

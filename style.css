@@ -1253,10 +1253,43 @@ button,
   touch-action: manipulation;
 }
 
+@media (max-width: 900px) {
+  :root {
+    --header-h: 80px;
+    --page-gutter: clamp(0.8rem, 4.2vw, 1.1rem);
+  }
+
+  .hero {
+    padding: clamp(2.25rem, 7vw, 3.25rem) 0 clamp(2.5rem, 8vw, 3.75rem);
+  }
+
+  .section {
+    padding: clamp(2.2rem, 6vw, 3.2rem) 0;
+  }
+
+  .section-head {
+    margin-bottom: clamp(1.35rem, 4vw, 2rem);
+  }
+
+  .hero h1 {
+    font-size: clamp(1.75rem, 6.8vw, 2.4rem);
+  }
+
+  .hero-lead,
+  .page-hero-lead {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.78rem 1.1rem;
+    font-size: 0.92rem;
+  }
+}
+
 @media (max-width: 640px) {
   .hero-visual,
   .hero-visual img {
-    min-height: min(260px, 55vw);
+    min-height: clamp(210px, 62vw, 290px);
   }
 
   .cta-band {
